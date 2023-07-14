@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script> 
+    <title>Catálogo de productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/catalogo.css">
+    <link rel="stylesheet" type="text/css" href="css/cabecera.css">
+</head>
+<body>
+    <!-- cabecera -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/credillantslogo.png" alt="" class="logoimg">
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="icono-menu fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a th:href="@{/index}">Inicio</a>
+                <a th:href="@{/catalogo}">Productos</a>
+                <a href="">Servicios</a>
+                <a href="">Contáctanos</a>
+                <a href="">Login</a>
+                <a href=""><img src="img/carrito.png" class="logocar"></a>
+            </div>
+        </nav>
+    </header>
+    <section class="contenido-principal">
+        <div class="caja-producto" th:each="producto:${productos}">
+            <div class="imagen-caja-producto">
+                <img class="imagen-producto" src="img/llanta.jpg" alt="">
+            </div>
+            <div class="caja-descripcion" th:each="productos:${producto}">
+                <h1 class="caja-titulo" th:text=${producto.nombreProducto}></h1>
+                <div class="precio"  th:text="'S/. ' + ${producto.precioProducto}"></div>
+                <div class="boton-agregar">Añadir al carrito</div>
+            </div>
+        </div>
+    </section>
+</nav>
+</body>
+</html>

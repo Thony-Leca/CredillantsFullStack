@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credillants</title>
+    <script src="js/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/cabecera.css">
+    </head>
+    <body>
+        <!-- cabecera -->
+        <header id="header">
+            <nav class="menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/credillantslogo.png" alt="" class="logoimg">
+                    </a>
+                    <a href="#" class="btn-menu" id="btn-menu"       style="
+                    top: -0.10em !important;">
+                        <i class="icono-menu fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="enlaces" id="enlaces">
+                <a th:href="@{/index}">Inicio</a>
+                <a th:href="@{/catalogo}">Productos</a>
+                    <a href="">Servicios</a>
+                    <a href="">Contáctanos</a>
+                    <a href="">Login</a>
+                    <a href="" ><img src="img/carrito.png" class="logocar"></a>
+                </div>
+            </nav>
+        </header>
+        <main class="mg">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="container">
+                <div class="carousel-caption">
+                    <h1>Bienvenido</h1>
+                    <p>ENCUENTRA TU LLANTA IDEAL</p>
+                    <div class="select-opt">
+                        <select class="select-option">
+                            <option value="">CATEGORIA</option>
+                            <option value="">A/T (Todo Terreno)</option>
+                            <option value="">H/T (Pisteras)</option>
+                            <option value="">RunFlat</option>
+                            <option value="">Carga</option>
+                            <option value="">M/T</option>
+                        </select>
+                    </div>
+                    <div class="select-opt">
+                        <select class="select-option">
+                            <option value="">PRECIO</option>
+                            <option value="">s/100 - s/200</option>
+                            <option value="">s/200 - s/500</option>
+                            <option value="">s/500 - s/1000</option>
+                            <option value="">s/1000 - s/2000</option>
+                        </select>
+                    </div>
+                    <div class="select-opt">
+                        <p><a class="btn btn-warning" href="catalogo.html">Buscar</a></p>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="img/slider1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="img/slider2.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="img/bridgestone.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/continental.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/dunlop.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/linglong.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pirelli.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/westlake.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/yokohama.png" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="img/bridgestone.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/continental.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/dunlop.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/linglong.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pirelli.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/westlake.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/yokohama.png" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+</html> 
