@@ -18,4 +18,5 @@ public class ProductoDto {
     private Date duracionProducto;
     private Double precioProducto;
     private Boolean estadoProducto;
+    private String imagen;
 }

@@ -1,0 +1,123 @@
+
+/* Estilos para el contenedor principal del carrito */
+.contenido-principal {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 75px;
+  text-align: center;
+}
+
+/* Estilos para la tabla de productos */
+.cart-items-table {
+  width: 100%;
+  border-collapse: separate; /* Cambio en la propiedad */
+  border-spacing: 0; /* Agregado */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Agregado */
+}
+
+.cart-items-table th, .cart-items-table td {
+  padding: 20px;
+  border-bottom: 1px solid #ccc; /* Cambio en la propiedad */
+}
+
+.cart-items-table th:first-child, .cart-items-table td:first-child {
+  border-left: none; /* Agregado */
+}
+
+.cart-items-table th:last-child, .cart-items-table td:last-child {
+  border-right: none; /* Agregado */
+}
+
+.cart-items-table tr:last-child td {
+  border-bottom: none; /* Agregado */
+}
+
+
+
+
+
+
+  
+  /* Estilos para el total del carrito */
+  .cart-total {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .cart-total h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .cart-total .total-pagar {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Estilos para el botón "Seguir comprando" */
+  #seguir-comprando,
+#pagar-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#seguir-comprando {
+  background-color: #FFC300;
+  float: left; /* Posicionamiento a la izquierda */
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+#pagar-boton {
+  background-color: #007bff; /* Mismo color que "Seguir comprando" */
+  float: right; /* Posicionamiento a la derecha */
+}
+
+#pagar-boton:hover {
+  background-color: #0056b3;
+}
+
+#seguir-comprando:hover{
+  background-color: #D4AC0D;
+}
+
+  
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px; /* Agregado */
+}
+
+.modal-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+}

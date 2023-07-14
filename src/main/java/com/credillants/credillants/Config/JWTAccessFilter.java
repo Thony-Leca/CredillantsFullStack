@@ -76,7 +76,7 @@ public class JWTAccessFilter extends WebSecurityConfigurerAdapter{
                         "/Productos/productosInactivos",
                         "/catalogo",
                         "/index",
-                        "/catalogo/{idProducto}")
+                        "/carrito")
                 .permitAll()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .anyRequest()

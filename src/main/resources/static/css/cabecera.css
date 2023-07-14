@@ -1,4 +1,4 @@
-:root{
+:root{ 
     --color1: #003274;
     --color2: #c9ad12;
     --color3: #ffffff;
@@ -39,7 +39,7 @@ header{
 }
 
 .menu .logo img{
-    width: 200px;
+    width: 180px;
 }
 
 .menu .btn-menu{
@@ -67,10 +67,19 @@ header{
     color: var(--color3);
     text-decoration: none;
     padding: 1.3em;
-    font-family: 'Lato' !important;
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
+}
+
+.cont-cart-icon{
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    bottom: -10px;
+
+
 }
 
 .menu .enlaces a:hover{
@@ -111,12 +120,11 @@ header{
         width: 100%;
     }
     header .menu .btn-menu{
-        position: absolute !important;
-        display: inline-block !important;
+        position: absolute;
+        display: inline-block;
         color: var(--color3);
-        font-size: 3em !important;
-        right: 1em !important;
-        top: 0.15em !important;
+        font-size: 3em;
+        right: 2em;
     }
 
     .logocar{
@@ -124,4 +132,55 @@ header{
         position: relative;
     }
 
+    .cont-cart-icon{
+        width: 100px;
+        position: relative;
+        align-items: center;
+        bottom: 5px;
+    
+    
+    }
+
 }
+
+.count-products{
+    position: absolute;
+    top: 18%;
+    right: 40px;
+
+    background-color: #fffb00;
+    color: #0003a8;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.cont-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+

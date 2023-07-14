@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header>
+		<nav class="menu">
+			<div class="logo">
+				<a href="@{/index}">
+					<img src="img/credillantslogo.png" alt="" class="logoimg">
+				</a>
+				<a href="#" class="btn-menu" id="btn-menu">
+					<i class="icono-menu fa fa-bars"></i>
+				</a>
+			</div>
+			<div class="enlaces" id="enlaces">
+				<a th:href="@{/index}">Inicio</a>
+        <a th:href="@{/catalogo}">Productos</a>
+				<a href="">Servicios</a>
+				<a href="">Contáctanos</a>
+				<a href="">Login</a>
+			</div>
+    </header>
+    <section class="contenido-principal">
+        <table class="cart-items-table">
+            <thead>
+                <tr>
+                  <th>Cantidad</th>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+            <tbody id="cart-items-container">
+                <!-- Aquí se insertan los productos del carrito -->
+            </tbody>
+        </table>
+        <div class="cart-total">
+            <h3>Total:</h3>
+            <span class="total-pagar">$0.00</span>
+            <br>
+            <br>
+            <a href="/catalogo" id="seguir-comprando">Seguir comprando</a>
+            <a href="#" id="pagar-boton">Pagar</a>
+        </div>
+    </section>
+    <!-- Modal para mostrar el mensaje de compra exitosa -->
+    <div class="modal" id="modal-compra">
+        <div class="modal-content">
+          <p>Su compra fue realizada con éxito.</p>
+          <a href="/catalogo" class="modal-button" id="modal-aceptar">Aceptar</a>
+        </div>
+      </div>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
