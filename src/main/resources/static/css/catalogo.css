@@ -10,7 +10,7 @@
 
 .contenido-principal {
     width: 90%;
-    display: grid;
+    display: contents;
     align-items: center;
     position: relative;
     padding-bottom: 6em;

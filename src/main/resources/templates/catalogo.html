@@ -16,23 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/catalogo.css">
     <link rel="stylesheet" type="text/css" href="css/cabecera.css">
-    <style>
-        .container-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 20px;
-            justify-items: center;
-        }
 
-        .item {
-            text-align: center;
-        }
-
-        .imagen-producto {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,7 +32,7 @@
             </div>
             <div class="enlaces" id="enlaces">
                 <a th:href="@{/index}">Inicio</a>
-                <a th:href="@{/catalogo}">Productos</a>
+                <a  th:href="@{/catalogo}">Productos</a>
                 <a href="">Servicios</a>
                 <a href="">Contáctanos</a>
                 <a href="">Login</a>
@@ -81,7 +65,7 @@
                         <div class="cart-total hidden">
                             <h3>Total:</h3>
                             <span class="total-pagar">$200</span><br>
-                            <br><a href="/carrito" onclick="saveCart()">Ver el carrito de compras</a>
+                            <br><a th:href="@{/carrito}" onclick="saveCart()">Ver el carrito de compras</a>
                             <script>
                                 function saveCart() {
                                     // Guardar el carrito en el almacenamiento local
@@ -96,15 +80,17 @@
         </nav>
     </header>
     <section class="contenido-principal">
-        <div class="container-items" th:each="producto:${productos}">
-            <div class="item">
-                <img class="imagen-producto" src="img/llanta.jpg" alt="producto" />
-                <div class="info-product" th:each="productos:${producto}">
-                <h2 class="caja-titulo" th:text="${producto.nombreProducto}"></h2>
-                <p class="price" th:text="'S/. ' + ${producto.precioProducto}"></p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
+		<div class="container-items">
+			<div class="item" th:each="producto:${productos}">
+				<img class="imagen-producto" src="img/llanta.jpg" alt="producto" />
+				<div class="info-product" th:each="productos:${producto}">
+					<center>
+						<h2 class="caja-titulo" th:text="${producto.nombreProducto}"></h2>
+						<p class="price" th:text="'S/. ' + ${producto.precioProducto}"></p>
+					</center>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
     </section>
 
     <!-- Resto del código HTML -->

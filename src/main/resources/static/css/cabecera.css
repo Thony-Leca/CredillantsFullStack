@@ -69,10 +69,12 @@ header{
     padding: 1.3em;
     font-size: 1.2em;
     font-weight: bold;
+    font-family: 's' !important;
     text-align: center;
 }
 
 .cont-cart-icon{
+    padding-right: 1em;
     width: 100px;
     position: absolute;
     display: inline-block;
@@ -124,7 +126,8 @@ header{
         display: inline-block;
         color: var(--color3);
         font-size: 3em;
-        right: 2em;
+        right: 0.5em !important;
+        top: .1em !important;
     }
 
     .logocar{
@@ -146,8 +149,7 @@ header{
 .count-products{
     position: absolute;
     top: 18%;
-    right: 40px;
-
+    right: 3.3em;
     background-color: #fffb00;
     color: #0003a8;
     width: 30px;
